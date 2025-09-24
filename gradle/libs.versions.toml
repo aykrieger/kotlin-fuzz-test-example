@@ -1,0 +1,19 @@
+[versions]
+kandy = "0.8.0-RC1"
+kotlin = "2.1.0"
+kotlinxCoroutines = "1.10.0"
+kotlinxSerializationJson = "1.7.3"
+okhttp = "4.12.0"
+retrofit = "2.11.0"
+
+[libraries]
+kandy-lets-plot = { group = "org.jetbrains.kotlinx", name = "kandy-lets-plot", version.ref = "kandy" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlin-serialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
