@@ -3,8 +3,15 @@ package sandbox.fuzz
 import kotlinx.fuzz.KFuzzTest
 import kotlinx.fuzz.KFuzzer
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Test
 
 class MathTest {
+
+    @Test
+    fun testSanity() {
+        assertTrue(true)
+    }
 
     @KFuzzTest
     fun testAddOneAndSubtractOne(f: KFuzzer) {
