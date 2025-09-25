@@ -19,7 +19,7 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
-*.jar
+# *.jar # Allow Gradle JAR
 *.war
 *.nar
 *.ear
